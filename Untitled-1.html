@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Recommendation</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  #recommendation {
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+  <h1>Movie Recommendation System</h1>
+  <button onclick="recommendMovie()">Get Recommendation</button>
+  <div id="recommendation"></div>
+
+  <script>
+    // Array of movies
+    var movies = [
+      "The Shawshank Redemption",
+      "The Godfather",
+      "The Dark Knight",
+      "Pulp Fiction",
+      "Fight Club",
+      "Forrest Gump",
+      "The Matrix",
+      "The Lord of the Rings",
+      "Inception",
+      "Goodfellas"
+    ];
+
+    // Function to recommend a random movie
+    function recommendMovie() {
+      // Get a random index
+      var randomIndex = Math.floor(Math.random() * movies.length);
+      // Get the movie at the random index
+      var randomMovie = movies[randomIndex];
+      // Display the recommendation
+      document.getElementById("recommendation").textContent = "You should watch: " + randomMovie;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess_Game</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: #212121;
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+    <img src="picture.jpg">
+    <h3><b>Number Guessing Game</b></h3>
+    <P><b>Try and guess a random number between 1 and 100. </b></P>
+    <p><b>You have 10 attempts to guess the right number.</b></p>
+    <br><br><br>
+    <form>
+    <h1> Guess a number</h1>
+    <input type="text" id="inputs"><br><br>
+    <input type="submit" id="submit" value="Submit Guess">
+</form>
+<div class="resultParas">
+    <p>Previous Guesses :<span id="preguess"></span></p>
+    <p>Guesses Remaining : <span id="remguess">10</span></p>
+    <p id="answer"></p>
+    <p id="loworhig"></p>
+</div>
+
+
+<script src="guess_game.js"></script>
+</body>
+</html>
